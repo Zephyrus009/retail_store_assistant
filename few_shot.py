@@ -5,5 +5,12 @@ examples = [
         'SQLResult': "[(3280,)]",
         "Answer": "3280"
 
+    },
+    {
+        'Question':"How much quantity of clothing products are sold in month of March",
+        'SQLQuery':"select sum(quantity) as Clothing_Quantity from retail_data where product_category = 'Clothing' and date >= '2023-03-01' and date < '2023-04-01'",
+        'SQLResult':"[(111,)]",
+        "Answer":"111"
     }
+
 ]
